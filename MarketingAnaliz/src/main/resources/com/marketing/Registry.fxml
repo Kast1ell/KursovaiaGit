@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ListView?>
+<VBox alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.marketing.RegistryCont">
+
+
+    <VBox fx:id="Registration" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" spacing="5" alignment="CENTER" visible="true">
+        <HBox spacing="5" alignment="CENTER">
+            <Label fx:id="LoginLabel" text="Login"  prefWidth="100"/>
+            <TextField fx:id="LoginField" text="" prefWidth="100"/>
+        </HBox>
+        <HBox spacing="5" alignment="TOP_CENTER">
+            <Label fx:id="PasswordLabel" text="Password"  prefWidth="100"/>
+            <TextField fx:id="PasswordField" text="" prefWidth="100"/>
+        </HBox>
+        <HBox alignment="CENTER">
+            <padding>
+                <Insets left="50"/>
+            </padding>
+            <VBox alignment="TOP_CENTER">
+                <Button fx:id="RegButton" text="Войти" onAction="#onButtonRegClick" />
+                <Label fx:id="option" text=""/>
+                <Button fx:id="RegistrationBt" text="Авторизация" onAction="#onButtonRegClick2" />
+            </VBox>
+            <VBox alignment="TOP_CENTER" fx:id="RegId">
+
+            </VBox>
+        </HBox>
+    </VBox>
+</VBox>
+
